@@ -1,6 +1,7 @@
 import React from 'react';
 import './Home.css';
 import Topbar from '../../Components/Topbar/Topbar';
+import Description from '../../Components/Description/Description';
 
 const Home = () => {
   return (
@@ -13,10 +14,11 @@ const Home = () => {
       </div>
       <img
         className="headerImg"
-        src="https://images.pexels.com/photos/1167355/pexels-photo-1167355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        src="https://wallpaperaccess.com/full/1516408.jpg"
         alt=""
       />
     </div>
+    <Description/>
     </>
   );
 }

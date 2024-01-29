@@ -1,0 +1,115 @@
+/* Contact.css */
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+
+.contact-form {
+  flex: 1;
+  max-width: 600px;
+}
+
+.contact-form h2 {
+  font-size: 2rem;
+  font-family: "Lora", serif;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 80%;
+  height:50%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.contact-image img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 600px) {
+  /* Styles for screens up to 600px (mobile) */
+
+  .contact-container {
+    flex-direction: column; /* Stack items on top of each other */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .contact-form {
+    margin-right: 0; /* Remove the margin for better spacing */
+  }
+
+  .contact-image {
+    margin-top: 20px; /* Add margin for spacing */
+    order: -1; 
+  }
+  .contact-form h2{
+    margin-top: 20px;
+  }
+  input,
+textarea {
+  margin-top: 20px;
+}
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  /* Styles for tablet screens (between 600px and 1024px) */
+
+  .contact-container {
+    flex-direction: column; /* Stack items on top of each other */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .contact-form {
+    width: 80%; /* Adjusted width for better spacing */
+    margin-top: 20px; /* Add margin for spacing */
+  }
+
+  .contact-form h2{
+    margin-top: 20px;
+  }
+  input,
+textarea {
+  margin-top: 20px;
+}
+
+.contact-image {
+  margin-top: 20px; /* Add margin for spacing */
+  order: -1; 
+}
+}
+  
+   

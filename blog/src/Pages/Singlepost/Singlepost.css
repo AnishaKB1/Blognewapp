@@ -1,0 +1,142 @@
+.singlePost {
+  flex: 9;
+  background-color: #f9f9f9;
+}
+
+.singlePostWrapper {
+  padding: 20px;
+  padding-right: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.singlePostImg {
+  width: 97%;
+  height: 300px;
+  border-radius: 5px;
+  object-fit: contain;
+}
+
+.singlePostTitle {
+  text-align: center;
+  margin: 10px;
+  font-family: "Lora", serif;
+  font-size: 28px;
+}
+
+.singlePostTitleInput {
+  margin: 10px;
+  font-family: "Lora", serif;
+  font-size: 28px;
+  text-align: center;
+  border: none;
+  color: gray;
+  border-bottom: 1px solid lightgray;
+}
+
+.singlePostTitleInput:focus {
+  outline: none;
+}
+
+.singlePostEdit {
+  float: right;
+  font-size: 16px;
+  margin-right: 40px;
+}
+
+.singlePostIcon {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.singlePostIcon:first-child {
+  color: teal;
+}
+
+.singlePostIcon:last-child {
+  color: tomato;
+}
+
+.singlePostInfo {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-family: "Varela Round", sans-serif;
+  color: #b39656;
+}
+
+.singlePostDesc {
+  color: #333;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.singlePostDesc::first-letter {
+  margin-left: 20px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.singlePostDescInput {
+  border: 1px solid #ddd;
+  color: #333;
+  font-size: 18px;
+  line-height: 25px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.singlePostDescInput:focus {
+  outline: none;
+  border-color: teal;
+}
+
+.singlePostButton {
+  width: 100px;
+  border: none;
+  background-color: teal;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-top: 20px;
+}
+.singlePostDate{
+  margin-right: 30px;
+}
+
+/* Add more styles as needed */
+
+
+/* Media queries for tablet */
+@media (max-width: 768px) {
+  .singlePostImg {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+/* Media queries for mobile */
+@media (max-width: 480px) {
+  .singlePostWrapper {
+    padding: 10px;
+  }
+
+  .singlePostImg {
+    height: 150px;
+  }
+
+  .singlePostTitle {
+    font-size: 22px;
+  }
+
+  .singlePostDesc {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

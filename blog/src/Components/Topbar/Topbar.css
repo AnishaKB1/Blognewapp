@@ -1,64 +1,145 @@
-.top {
-    width: 100%;
-    height: 50px;
+/* Topbar.css */
+.desktop-topbar {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  z-index: 999;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.topLeft,
+.topRight {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topIcon {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #444;
+  cursor: pointer;
+}
+
+.topCenter {
+  flex: 6;
+}
+
+.topList {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.topListItem {
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.topListItem:hover {
+  color: gray;
+}
+
+
+.topImg {
+  width: 200px;
+  height: 50px;
+  /* border-radius: 50%;
+  object-fit: cover; */
+  margin-right: 15px;
+  cursor: pointer;
+  color: rgb(134, 134, 134);
+}
+
+
+/*mObile view css*/
+
+
+
+.mobile-topbar {
+  display: none;
+}
+
+.mobile-icons {
+  display: none;
+}
+
+.mobile-sidebar {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .desktop-topbar {
+    display: none;
+  }
+
+  .mobile-icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .mobile-topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
     background-color: white;
-    position: sticky;
+    color: #0e0d0d;
+  }
+
+  .mobile-sidebar {
+    position: fixed;
     top: 0;
-    display: flex;
-    align-items: center;
-    z-index: 999;
-    font-family: "Josefin Sans", sans-serif;
+    right: 0;
+    bottom: 0;
+    width: 80%;
+    max-width: 200px;
+    background-color: #fff;
+    box-shadow: -1px 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    padding: 20px;
+    z-index: 1000;
+    display: block;
   }
-  
-  .topLeft,
-  .topRight {
-    flex: 3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .topIcon {
-    font-size: 20px;
-    margin-right: 10px;
-    color: #444;
+
+  .mobile-sidebar-toggle {
     cursor: pointer;
+    font-size: 25px;
+    color: #0f0f0f;
   }
-  
-  .topCenter {
-    flex: 6;
-  }
-  
-  .topList {
-    display: flex;
-    justify-content: center;
-    margin: 0;
+
+  .sidebar-list {
     padding: 0;
     list-style: none;
+    margin-top: 30px;
   }
-  
-  .topListItem {
-    margin-right: 20px;
+
+  .sidebar-list-item {
+    margin-bottom: 10px;
+    color:black;
     font-size: 18px;
     font-weight: 300;
     cursor: pointer;
+    padding:10px;
   }
-  
-  .topListItem:hover{
-      color: gray;
+
+  .sidebar-list-item:hover {
+    color: gray;
   }
-  
-  .topImg {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 15px;
+
+  .close-icon {
     cursor: pointer;
+    font-size: 20px;
+    color: #333;
   }
-  
-  .topSearchIcon {
-    font-size: 18px;
-    color: #666;
-    cursor: pointer;
-  }
+}

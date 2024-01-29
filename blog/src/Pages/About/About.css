@@ -1,0 +1,89 @@
+/* About.css */
+
+.about-container {
+  display: flex;
+  flex-direction: column; /* Change to column for mobile view */
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-content {
+  flex: 1;
+  max-width: 600px;
+  text-align: center; /* Center align content for mobile view */
+}
+
+.about-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-family: "Lora", serif;
+  color: #333;
+}
+
+.about-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #555;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about-image img {
+  max-width: 100%; /* Set image width to 100% for responsiveness */
+  height: auto; /* Set height to auto for responsiveness */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-image img:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (min-width: 600px) {
+  .about-container {
+    flex-direction: row; /* Change back to row for larger screens */
+  }
+
+  .about-content {
+    text-align: left; /* Left align content for larger screens */
+  }
+
+  .about-image {
+    margin-bottom: 0; /* Remove the margin between image and content for larger screens */
+    margin-left: 20px;
+  }
+}
+
+/* Additional styles for tablet view */
+@media only screen and (min-width: 768px) {
+  .about-container {
+    padding: 60px;
+    flex-direction: column; /* Change back to column for tablet view */
+    align-items: stretch; /* Stretch items to full width */
+  }
+
+  .about-content {
+    margin-bottom: 20px; /* Add margin between content and image for tablet view */
+  }
+}
+
+/* Additional styles for desktop view */
+@media only screen and (min-width: 1024px) {
+  .about-container {
+    flex-direction: row; /* Display image to the right on desktop */
+  }
+
+  .about-content {
+    text-align: left; /* Left align content for desktop view */
+    margin-right: 20px; /* Add margin to the right for better separation */
+  }
+
+  .about-image {
+    margin-bottom: 20px; /* Add margin between image and content for desktop view */
+  }
+}

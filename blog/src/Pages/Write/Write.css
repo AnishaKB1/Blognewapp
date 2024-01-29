@@ -1,0 +1,110 @@
+/* General styles for all screen sizes */
+.write {
+  padding-top: 50px;
+}
+
+.writeImg {
+  margin-left: 150px;
+  width: 1000px;
+  height: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.writeForm {
+  position: relative;
+}
+
+.writeFormGroup {
+  margin-left: 30px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column; /* Stack items vertically on smaller screens */
+}
+
+.writeIcon {
+  width: 25px;
+  height: 25px;
+  font-size: 20px;
+  border: 1px solid;
+  border-radius: 50%;
+  color: rgb(129, 125, 125);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.writeInput {
+  font-size: 30px;
+  border: none;
+  padding: 20px;
+  width: 70vw;
+}
+
+.writeInput::placeholder {
+  color: rgb(189, 185, 185);
+  font-weight: 400;
+}
+
+.writeInput:focus {
+  outline-style: none;
+}
+
+.writeText {
+  width: 70vw;
+  height: 50vh;
+  font-family: inherit;
+  font-size: 20px;
+}
+
+.writeSubmit {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  color: white;
+  background-color: teal;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 80px;
+}
+
+/* Media queries for tablet view */
+@media only screen and (max-width: 1023px) {
+  .writeImg {
+    margin-left: 10px; /* Adjusted for smaller screens */
+    width: 100%;
+    height: auto;
+  }
+
+  .writeFormGroup {
+    margin-left: 10px; /* Adjusted for smaller screens */
+  }
+}
+
+/* Media queries for mobile view */
+@media only screen and (max-width: 600px) {
+  .writeImg {
+    margin-left: 10px; /* Adjusted for smaller screens */
+    width: 100%;
+    height: auto;
+  }
+
+  .writeFormGroup {
+    margin-left: 10px; /* Adjusted for smaller screens */
+  }
+
+  .writeSubmit {
+    position: relative; /* Adjusted for smaller screens */
+    margin-top: 0px;
+    left: 150px;
+    
+    
+  }
+}

@@ -1,21 +1,28 @@
+// model/post.js
+
 const mongoose = require('mongoose');
 
 const postSchema = new mongoose.Schema({
     title: {
         type: String,
         required: true,
-        trim: true // Removes leading and trailing whitespaces
+        trim: true
     },
     description: {
         type: String,
         required: true,
         trim: true
     },
-    imageUrls: {
-        type: [String] // An array to store multiple image URLs
+    imageurl: {
+        type: String // Change to a single String for the image URL
+    },
+    user: { 
+        type: mongoose.Schema.Types.ObjectId, 
+        ref: 'signupdata', 
+        required: true 
     }
 }, {
-    timestamps: true // Automatically add createdAt and updatedAt fields
+    timestamps: true
 });
 
 const postdata = mongoose.model('postdata', postSchema);

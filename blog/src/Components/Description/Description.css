@@ -1,0 +1,156 @@
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+  }
+  
+  .content-container {
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 40px; /* Added margin to separate the two content sections */
+  }
+  
+  .text-container {
+    flex: 1;
+    padding: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
+    font-size: 15px;
+  }
+  
+
+  .text-containerwonder {
+    flex: 1;
+    padding: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center !important;
+    font-size: 15px;
+    align-items: center!important;
+  
+    margin-left: 400px;
+  }
+  
+  #head {
+    font-size: 2em;
+    font-family: "Lora", serif;
+    margin-bottom: 15px;
+    color: rgb(37, 37, 37);
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  #para {
+    font-size: 1.2em;
+  }
+  
+  .image-container {
+    flex: 1;
+  }
+   
+  .desc-image:hover {
+    transform: scale(1.05);
+    border-radius: 50%;
+  }
+  
+  .desc-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .button-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #get-started-btn {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Additional styling for the second content section */
+  .second-content-container {
+    
+    display: flex;
+    flex-direction: row-reverse; /* Reverse the order for image and text in the second section */
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .content-container,
+    .second-content-container {
+      flex-direction: column;
+    }
+  
+    .text-container,
+    .image-container {
+      padding: 10px;
+    }
+    .image-list-container {
+      padding: 10px;
+      width:100%;
+    }
+  
+    .image-list {
+      width: 100%;
+    }
+    .text-containerwonder {
+     margin-left: auto;
+    }
+  }
+
+
+
+
+
+
+
+  .imgtitle{
+     
+     color:white;
+     font-size: 20px;
+     font-family: "Lora", serif;
+  }
+  
+  .image-list-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+   
+ 
+  }
+  
+  .image-list {
+    width: 80%; /* Adjust the width as needed */
+  }
+
+
+
+  /* iPad Mini */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (-webkit-min-device-pixel-ratio: 1) {
+.text-containerwonder {
+  margin-left: 150px;
+}
+}
+
+/* iPad Pro and iPad Air */
+@media only screen
+and (min-device-width: 1024px)
+and (max-device-width: 1366px)
+and (-webkit-min-device-pixel-ratio: 2) {
+.text-containerwonder {
+  margin-left: 150px;
+}
+}

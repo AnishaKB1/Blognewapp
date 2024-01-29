@@ -8,12 +8,14 @@
         rgba(255, 255, 255, 0.5),
         rgba(255, 255, 255, 0.5)
       ),
-      url("https://images.pexels.com/photos/768473/pexels-photo-768473.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+      url("https://t3.ftcdn.net/jpg/05/97/65/78/240_F_597657868_gsXkqDHAzPfZsHoVae125ZzmexPo2hte.jpg");
     background-size: cover;
+    margin-top: 20px;
   }
   
   .loginTitle {
     font-size: 50px;
+    font-family: "Lora", serif;
   }
   
   .loginForm {
@@ -31,6 +33,8 @@
     background-color: white;
     border: none;
     border-radius: 10px;
+    width:200px;
+    
   }
   
   .loginInput:focus {
@@ -40,7 +44,7 @@
   .loginButton {
     margin-top: 20px;
     cursor: pointer;
-    background-color: lightcoral;
+    background-color: rgb(253, 69, 69);
     color: white;
     padding: 10px;
     border: none;
@@ -50,7 +54,7 @@
   
   .loginRegisterButton {
     position: absolute;
-    top: 60px;
+    top: 90px;
     right: 20px;
     background-color: teal;
     cursor: pointer;
@@ -58,4 +62,5 @@
     border: none;
     color: white;
     border-radius: 10px;
+    width:100px;
   }
