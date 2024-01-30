@@ -34,12 +34,21 @@ const Topbar = () => {
     <div>
       {/* Desktop View */}
       <div className="desktop-topbar">
-        <div className="topLeft">
-          <FaFacebookSquare className="topIcon" />
-          <FaInstagramSquare className="topIcon" />
-          <FaPinterestSquare className="topIcon" />
-          <FaTwitterSquare className="topIcon" />
-        </div>
+      <div className="topLeft">
+  <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+    <FaFacebookSquare className="topIcon" />
+  </a>
+  <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+    <FaInstagramSquare className="topIcon" />
+  </a>
+  <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer">
+    <FaPinterestSquare className="topIcon" />
+  </a>
+  <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
+    <FaTwitterSquare className="topIcon" />
+  </a>
+</div>
+
         <div className="topCenter">
           <ul className="topList">
             <li className="topListItem">
@@ -103,12 +112,21 @@ const Topbar = () => {
 
       {/* Mobile View */}
       <div className="mobile-topbar">
-        <div className="mobile-icons">
-          <FaFacebookSquare className="topIcon" />
-          <FaInstagramSquare className="topIcon" />
-          <FaPinterestSquare className="topIcon" />
-          <FaTwitterSquare className="topIcon" />
-        </div>
+      <div className="mobile-icons">
+  <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+    <FaFacebookSquare className="topIcon" />
+  </a>
+  <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+    <FaInstagramSquare className="topIcon" />
+  </a>
+  <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer">
+    <FaPinterestSquare className="topIcon" />
+  </a>
+  <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
+    <FaTwitterSquare className="topIcon" />
+  </a>
+</div>
+
         <div className="mobile-sidebar-toggle" onClick={handleMobileSidebarToggle}>
           {openMobileSidebar ? (
             <i className="fas fa-times"></i>
