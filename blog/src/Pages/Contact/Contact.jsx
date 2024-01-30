@@ -1,5 +1,3 @@
-// Contact.js
-
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com'; // Import EmailJS SDK
 import './Contact.css';
@@ -11,6 +9,8 @@ const Contact = () => {
     email: '',
     message: '',
   });
+
+  const [isSentSuccessfully, setIsSentSuccessfully] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -25,7 +25,9 @@ const Contact = () => {
 
     try {
       await sendEmail(formData);
-      // You may want to reset the form after submission
+      // Set a flag to indicate successful submission
+      setIsSentSuccessfully(true);
+      // Reset the form after submission
       setFormData({
         name: '',
         email: '',
@@ -39,7 +41,7 @@ const Contact = () => {
   const sendEmail = async ({ name, email, message }) => {
     // Replace 'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', and 'YOUR_USER_ID' with your actual EmailJS credentials
     const serviceId = 'service_a407t2k';
-    const templateId = 'template_hxwfknp';
+    const templateId = 'template_lpbdpyf';
     const userId = 'ID4fcTFjndsDNv5CU';
 
     const templateParams = {
@@ -57,11 +59,15 @@ const Contact = () => {
     }
   };
 
+  const handleAlertClose = () => {
+    // Close the alert and reset the flag
+    setIsSentSuccessfully(false);
+  };
+
   return (
     <>
       <Topbar />
       <div className="contact-container">
-      
         <div className="contact-form">
           <h2>Contact Us</h2>
           <form onSubmit={handleSubmit}>
@@ -96,6 +102,12 @@ const Contact = () => {
             </div>
             <button type="submit">Send Message</button>
           </form>
+          {/* {isSentSuccessfully && (
+            <div className="success-alert">
+              <p>Comment successfully sent!</p>
+              <button onClick={handleAlertClose}>Close</button>
+            </div>
+          )} */}
         </div>
         <div className="contact-image">
           <img src="https://media.istockphoto.com/id/1201366590/photo/3d-communication-symbols-contact-info-symbols.jpg?s=612x612&w=0&k=20&c=QUSma-zDwXaWT6a9iSTvWebUkQVXd3cxd7pJpci0kE4=" alt="Contact Us" />

@@ -16,7 +16,7 @@
 }
 
 .writeFormGroup {
-  margin-left: 30px;
+  margin-left: 1px;
   margin-top: 10px;
   display: flex;
   align-items: center;
@@ -44,7 +44,7 @@
 }
 
 .writeInput::placeholder {
-  color: rgb(189, 185, 185);
+  color: rgb(65, 64, 64);
   font-weight: 400;
 }
 
@@ -54,7 +54,7 @@
 
 .writeText {
   width: 70vw;
-  height: 50vh;
+  height: 30vh;
   font-family: inherit;
   font-size: 20px;
 }
@@ -62,7 +62,7 @@
 .writeSubmit {
   position: absolute;
   top: 20px;
-  right: 50px;
+  right: 150px;
   color: white;
   background-color: teal;
   padding: 10px;

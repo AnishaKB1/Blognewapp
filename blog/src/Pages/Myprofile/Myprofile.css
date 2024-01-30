@@ -10,7 +10,7 @@
   .settingsTitle {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:space-between;
   }
   
   .settingsUpdateTitle {
@@ -23,6 +23,7 @@
     color: red;
     font-size: 16px;
     cursor: pointer;
+    margin-right: 90px;
   }
   
   .settingsForm {
@@ -65,3 +66,35 @@
       margin-top: 20px;
       cursor: pointer;
   }
+
+  
+/* Media Query for Tablets */
+@media only screen and (max-width: 768px) {
+  .settingsWrapper {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .settingsDeleteTitle {
+    margin-right: 0; /* Remove right margin for smaller screens */
+    margin-top: 10px; /* Add top margin for spacing */
+  }
+}
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 480px) {
+  .settingsUpdateTitle {
+    font-size: 24px; /* Adjust font size for smaller screens */
+  }
+
+  .settingsDeleteTitle {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .settingsForm > label {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+
+  .settingsForm > input {
+    height: 25px; /* Adjust input height for smaller screens */
+  }
+}
